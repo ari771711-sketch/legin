@@ -1,99 +1,245 @@
-.class final Lkotlin/collections/ArraysKt___ArraysKt$withIndex$6;
-.super Lkotlin/jvm/internal/Lambda;
-.source "_Arrays.kt"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkotlin/collections/ArraysKt___ArraysKt;->withIndex([F)Ljava/lang/Iterable;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
-    name = null
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lkotlin/jvm/internal/Lambda;",
-        "Lkotlin/jvm/functions/Function0<",
-        "Ljava/util/Iterator<",
-        "+",
-        "Ljava/lang/Float;",
-        ">;>;"
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Legion - Minecraft Vanilla Server 1.16.5</title>
+  <style>
+    /* --- Загальні стилі --- */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 15px;
+      background: linear-gradient(135deg, #1f1f3e, #3a3a72);
+      color: #eee;
+      line-height: 1.6;
     }
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\u000c\n\u0000\n\u0002\u0010(\n\u0002\u0010\u0007\n\u0000\u0010\u0000\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0001H\n\u00a2\u0006\u0002\u0008\u0003"
+    a {
+      color: #66ccff;
+      text-decoration: none;
     }
-    d2 = {
-        "<anonymous>",
-        "",
-        "",
-        "invoke"
+    a:hover {
+      text-decoration: underline;
     }
-    k = 0x3
-    mv = {
-        0x1,
-        0x9,
-        0x0
+    header {
+      background-color: #0b1227;
+      padding: 25px 10px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00aaffaa;
+      margin-bottom: 30px;
     }
-    xi = 0x30
-.end annotation
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px #00aaffcc;
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      font-weight: 700;
+      margin: 0 15px;
+      font-size: 1.1em;
+    }
+    section {
+      background: #121833cc;
+      padding: 20px 25px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #004080aa;
+      border: 1px solid #0055aa88;
+      transition: background 0.3s ease;
+    }
+    section:hover {
+      background: #1a2a5acc;
+    }
+    h2 {
+      color: #00c3ff;
+      margin-top: 0;
+      font-size: 2em;
+      text-shadow: 0 0 6px #00c3ffaa;
+      border-bottom: 2px solid #00c3ff66;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+    }
+    h3 {
+      color: #88ddffcc;
+      margin-top: 0;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    p, li {
+      font-size: 1.1em;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 0.9em;
+      padding: 15px 10px;
+      border-top: 1px solid #00408088;
+      margin-top: 40px;
+      font-style: italic;
+      user-select: none;
+    }
+    /* --- Кнопка "Вгору" --- */
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      padding: 12px 18px;
+      background: #00aaffbb;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 0 8px #00aaffcc;
+      display: none;
+      transition: background 0.3s ease;
+      z-index: 999;
+    }
+    #scrollTopBtn:hover {
+      background: #0099ee;
+    }
+    /* --- Форма зворотного зв'язку --- */
+    form {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      background: #0b122722;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px #0099ff44;
+    }
+    label {
+      margin: 10px 0 5px 0;
+      font-weight: 600;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1em;
+      resize: vertical;
+    }
+    input[type="submit"] {
+      background: #00aaffcc;
+      color: white;
+      font-weight: 700;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      border: none;
+    }
+    input[type="submit"]:hover {
+      background: #0099ee;
+    }
+    /* --- Мобільна адаптивність --- */
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
 
+  <header>
+    <h1>Legion — Minecraft Vanilla Server 1.16.5</h1>
+    <nav>
+      <a href="#about">Про сервер</a> |
+      <a href="#features">Функції</a> |
+      <a href="#rules">Правила</a> |
+      <a href="#discord">Discord</a> |
+      <a href="#contact">Контакти</a>
+    </nav>
+  </header>
 
-# instance fields
-.field final synthetic $this_withIndex:[F
+  <section id="about">
+    <h2>Про сервер</h2>
+    <h3>IP сервера: <code>L1fron.aternos.me</code></h3>
+    <p>Ласкаво просимо на наш ванільний Minecraft сервер 1.16.5! Ми створили комфортне середовище для гри з друзями, регулярні оновлення та цікаві події.</p>
+  </section>
 
+  <section id="features">
+    <h2>Функції сервера</h2>
+    <ul>
+      <li>Стабільна робота без лагів</li>
+      <li>Регулярні івенти та міні-ігри</li>
+      <li>Активна дружня спільнота</li>
+      <li>Античит та безпека</li>
+      <li>Підтримка Bedrock Edition</li>
+      <li>Плагіни для покращення геймплею</li>
+    </ul>
+  </section>
 
-# direct methods
-.method constructor <init>([F)V
-    .locals 1
+  <section id="rules">
+    <h2>Правила сервера</h2>
+    <ul>
+      <li>Поважай інших гравців</li>
+      <li>Заборонено використання читів</li>
+      <li>Не спамити в чаті</li>
+      <li>Дотримуйся вказівок адміністраторів</li>
+      <li>Будь ввічливим і дружнім</li>
+    </ul>
+  </section>
 
-    iput-object p1, p0, Lkotlin/collections/ArraysKt___ArraysKt$withIndex$6;->$this_withIndex:[F
+  <section id="discord">
+    <h2>Приєднуйся до нашого Discord</h2>
+    <p>Спілкуйся з гравцями, отримуй останні новини та допомогу:</p>
+    <p><a href="https://discord.gg/NdbjDPC9" target="_blank" rel="noopener noreferrer">https://discord.gg/NdbjDPC9</a></p>
+  </section>
 
-    const/4 v0, 0x0
+  <section id="contact">
+    <h2>Зворотній зв'язок</h2>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+      <label for="name">Ім'я:</label>
+      <input type="text" id="name" name="name" placeholder="Ваше ім'я" required />
 
-    invoke-direct {p0, v0}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="example@mail.com" required />
 
-    return-void
-.end method
+      <label for="message">Повідомлення:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Ваше повідомлення..." required></textarea>
 
+      <input type="submit" value="Відправити" />
+    </form>
+  </section>
 
-# virtual methods
-.method public bridge synthetic invoke()Ljava/lang/Object;
-    .locals 1
+  <footer>
+    <p>© 2025 Legion. Всі права захищені.</p>
+  </footer>
 
-    invoke-virtual {p0}, Lkotlin/collections/ArraysKt___ArraysKt$withIndex$6;->invoke()Ljava/util/Iterator;
+  <button id="scrollTopBtn" title="Вгору">↑</button>
 
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final invoke()Ljava/util/Iterator;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Iterator<",
-            "Ljava/lang/Float;",
-            ">;"
-        }
-    .end annotation
-
-    iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysKt$withIndex$6;->$this_withIndex:[F
-
-    invoke-static {v0}, Lkotlin/jvm/internal/ArrayIteratorsKt;->iterator([F)Lkotlin/collections/FloatIterator;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/Iterator;
-
-    return-object v0
-.end method
+  <script>
+    // Кнопка прокрутки вгору
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.onscroll = function() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    };
+    scrollBtn.onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+  
+</body>
+</html>
